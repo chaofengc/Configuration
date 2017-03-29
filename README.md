@@ -5,6 +5,7 @@ I haven't found a good .vimrc yet, but here are some candidates
 
 - https://github.com/samlaudev/ConfigurationFiles
 - https://github.com/GoYchen/VIM_TMUX
+- https://github.com/PytLab/dotfiles
 
 ### tmux.conf
 
