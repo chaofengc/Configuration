@@ -14,7 +14,7 @@ Main features are
 - Rebind `Ctrl+b` to `Ctrl+x`
 - Enable mouse to select window and panel, resize panel
 - Enlarge history to 10000 lines
-- Horizontal split: `bind-key v`, Vertical split: `bind-key s`
+- Horizontal split: `bind-key s`, Vertical split: `bind-key v`
 
 ### How to cooperate vim and tmux 
 For unknow reason, vim colortheme may not work in tmux without the following configuration  
