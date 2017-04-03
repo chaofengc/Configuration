@@ -27,3 +27,4 @@ set term=screen-256color
 ```
  alias tmux="TERM=screen-256color tmux" 
 ```
+Note: please use `source ~/.bashrc` to make it effective.
