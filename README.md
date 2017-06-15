@@ -7,6 +7,18 @@ I haven't found a good .vimrc yet, but here are some candidates
 - https://github.com/GoYchen/VIM_TMUX
 - https://github.com/PytLab/dotfiles
 
+#### Solarized Color scheme
+First, clone color scheme to bundle folder  
+`git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized`  
+Then add the following lines to `.vimrc`
+```
+set t_Co=256                                                                                              
+set term=screen-256color                                                                                                     syntax enable
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+```
+
 ### tmux.conf
 
 My tmux configuration is in [`.tmux.conf`](.tmux.conf)  
