@@ -1,25 +1,55 @@
-## vim and tmux configuration
+# Vim and Tmux configuration
 
-### vimrc
-I haven't found a good .vimrc yet, but here are some candidates
-
+## Vim Config
+My vimrc and some candidates
+- [`.vimrc`](.vimrc)
 - https://github.com/samlaudev/ConfigurationFiles
 - https://github.com/GoYchen/VIM_TMUX
 - https://github.com/PytLab/dotfiles
+- Reference: http://www.jianshu.com/p/f0513d18742a
 
-#### Solarized Color scheme
-First, clone color scheme to bundle folder  
-`git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized`  
-Then add the following lines to `.vimrc`
+### Update to Vim 8
+Vim 8 has many good features, and support some convenient plugin. Update to vim 8 with the following lines.
 ```
-set t_Co=256                                                                                              
-set term=screen-256color                                                                                                     syntax enable
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+sudo add-apt-repository ppa:jonathonf/vim     # get the newest version of vim
+sudo apt-get update && sudo apt-get upgrade   # update package
+sudo apt-get install vim-nox                  # add python3 support
+```
+To work with python 2
+```
+sudo apt install vim-nox-py2
+sudo update-alternatives --set vim /usr/bin/vim.nox-py2
+sudo update-alternatives --set vi /usr/bin/vim.nox-py2
+```
+### Plugin Notes
+Plugin List
+
+Name    | Function
+----    | ---
+'Lokaltog/vim-powerline'           | Bottom status bar
+'altercation/vim-colors-solarized' | Color Theme
+'Valloric/YouCompleteMe'           | Autocomplete
+'ctrlpvim/ctrlp.vim'               | File Search
+'scrooloose/nerdtree'              | File Tree
+'majutsushi/tagbar'                | Function and Variable Tag Bar
+'Yggdroot/indentLine'              | show indent 
+'jiangmiao/auto-pair'              | Auto pair ({["
+'tell-k/vim-autopep8'              | <F8> Auto format python file 
+'scrooloose/nerdcommenter'         | <F5> Quick comment 
+'fholgado/minibufexpl.vim'         | File explore
+
+#### YouCompleteMe
+Ultimate auto-complete plugin for Vim. After install it, you still need to set the configuration by copy the example configuration file and modify it.
+```
+cp ~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py ~/.vim  # Copy the example config file
+```
+Then, you need to compile it
+```
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer
 ```
 
-### tmux.conf
+## Tmux Config
 
 My tmux configuration is in [`tmux.conf`](.tmux.conf)  
 Main features are
@@ -28,7 +58,7 @@ Main features are
 - Enlarge history to 10000 lines
 - Horizontal split: `bind-key s`, Vertical split: `bind-key v`
 
-### How to cooperate vim and tmux 
+## How to cooperate vim and tmux 
 For unknow reason, vim colortheme may not work in tmux without the following configuration  
 (1) In .vimrc
 ```
