@@ -57,7 +57,7 @@ cd ~/.vim/bundle/YouCompleteMe
 
 ## Tmux Config
 
-My tmux configuration is in [`tmux.conf`](.tmux.conf)  
+My tmux configuration is in [`.tmux.conf`](.tmux.conf)  
 Main features are
 - Rebind `Ctrl+b` to `Ctrl+x`
 - Enable mouse to select window and panel, resize panel

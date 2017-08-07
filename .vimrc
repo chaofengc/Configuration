@@ -21,12 +21,15 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'fholgado/minibufexpl.vim'
-
+" Plugin 'fholgado/minibufexpl.vim'
+Plugin 'weynhamz/vim-plugin-minibufexpl'
 Plugin 'tpope/vim-fugitive'
+Plugin 'terryma/vim-smooth-scroll'
 call vundle#end()            " required
 
-""""""""""""""" Plugin Settings  """""""""""""""
+"------------------------------------
+" Plugin Settings  
+"------------------------------------
   " Fugitive 
     set diffopt+=vertical
     autocmd BufReadPost fugitive://* set bufhidden=delete
@@ -68,7 +71,12 @@ call vundle#end()            " required
   
   " airline
     let g:airline_powerline_fonts = 1
-
+  " minibuffer
+    map <Leader>bf :MiniBufExplorer<cr> 
+    let g:miniBufExplMapWindowNavVim = 1 
+    let g:miniBufExplMapWindowNavArrows = 1 
+    let g:miniBufExplMapCTabSwitchBufs = 1 
+    let g:miniBufExplModSelTarget = 1  "
   " CtrlP 
     set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.png,*.jpg,*.jpeg,*.gif " MacOSX/Linux
     let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
@@ -108,8 +116,10 @@ call vundle#end()            " required
     inoremap <expr> <Up>       pumvisible() ? '\<C-p>' : '\<Up>'
     inoremap <expr> <PageDown> pumvisible() ? '\<PageDown>\<C-p>\<C-n>' : '\<PageDown>'
     inoremap <expr> <PageUp>   pumvisible() ? '\<PageUp>\<C-p>\<C-n>' : '\<PageUp>'
-
-""""""""""""""" general settings  """""""""""""""
+    
+"------------------------------------
+" General Settings  
+"------------------------------------
   set showcmd
   set completeopt=preview,menu 
   set nocompatible
@@ -126,7 +136,7 @@ call vundle#end()            " required
   set iskeyword+=_,$,@,%,#,-
   set linespace=0
   set whichwrap+=<,>,h,l
-  set scrolloff=5
+  set scrolloff=10
   set mouse=a       
 " GUI status, tools, menu bar
   "" syntax
@@ -139,7 +149,7 @@ call vundle#end()            " required
     set background=dark
     let g:solarized_termcolors=256
   " let g:solarized_termtrans = 1
-  colorscheme solarized
+    colorscheme solarized
   "" GUI status
     set cursorline              " emphasize current line
     set statusline+=%{fugitive#statusline()} "  Git Hotness
@@ -177,23 +187,30 @@ call vundle#end()            " required
   filetype plugin on
   filetype indent on
   au BufRead,BufNewFile *  setfiletype txt
+  " Smooth scoll
+  noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
+  noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
+  noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
+  noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 
-""""""""""""""" mapping """""""""""""""""""
+"------------------------------------
+" Key Map Settings  
+"------------------------------------
   " window command
   map <C-h> <C-w>h
   map <C-j> <C-w>j
   map <C-k> <C-w>k
   map <C-l> <C-w>l
   " space and enter
-  map <Space> i<Space><ESC>
-  map <Enter> o<ESC>
-  
-  noremap! <C-F> <ESC> li
+                        
   " F2 save
   noremap <F2> <Esc>:w<CR>
   inoremap <F2> <Esc>:w<CR>
   map <S-s> <Esc>:wq<CR>
   map <S-q> <Esc>:q<CR>
-
-"""""""""" Function""""""""""""""""
+  imap <C-L> <Esc>
+  
+"------------------------------------
+" Functions 
+"------------------------------------
 " TODO
