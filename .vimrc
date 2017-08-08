@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-scripts/wombat256.vim'
 " AutoComplete and Program Tools
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -72,7 +73,9 @@ call vundle#end()            " required
     "nmap <F6> :NERDTreeToggle<CR> :Tagbar<CR> :MBEOpen<CR> 
   
   " airline
-    let g:airline_theme="wombat"
+    "let g:airline_theme="solarized"
+    let g:airline_theme="luna"
+    let g:airline_solarized_bg='dark'
     let g:airline_powerline_fonts = 1
     let g:airline#extensions#tabline#enabled = 1
     if !exists('g:airline_symbols')
@@ -170,9 +173,10 @@ call vundle#end()            " required
     set term=screen-256color
     syntax enable
     set background=dark
-    let g:solarized_termcolors=256
+    "let g:solarized_termcolors=256
   " let g:solarized_termtrans = 1
-    colorscheme solarized
+    "colorscheme solarized
+    colorscheme wombat256mod
   "" GUI status
     set cursorline              " emphasize current line
     set statusline+=%{fugitive#statusline()} "  Git Hotness
