@@ -15,7 +15,7 @@ My vimrc and some candidates
 - Reference: http://www.jianshu.com/p/f0513d18742a
 
 ### Update to Vim 8
-Vim 8 has many good features, and support some convenient plugin. Update to vim 8 with the following lines.
+**Vim 8 has many good features, and support some convenient plugin. Update to vim 8 with the following lines.
 ```
 sudo add-apt-repository ppa:jonathonf/vim     # get the newest version of vim
 sudo apt-get update && sudo apt-get upgrade   # update package
@@ -32,7 +32,8 @@ Plugin List
 
 Name    | Function
 ----    | ---
-'Lokaltog/vim-powerline'           | Bottom status bar
+'vim-airline/vim-airline'          | Status bar
+'vim-airline/vim-airline-themes'   | Airline Themes 
 'altercation/vim-colors-solarized' | Color Theme
 'Valloric/YouCompleteMe'           | Autocomplete
 'ctrlpvim/ctrlp.vim'               | File Search
@@ -42,7 +43,6 @@ Name    | Function
 'jiangmiao/auto-pair'              | Auto pair ({["
 'tell-k/vim-autopep8'              | <F8> Auto format python file 
 'scrooloose/nerdcommenter'         | <F5> Quick comment 
-'fholgado/minibufexpl.vim'         | File explore
 
 #### YouCompleteMe
 Ultimate auto-complete plugin for Vim. After install it, you still need to set the configuration by copy the example configuration file and modify it.
@@ -54,6 +54,11 @@ Then, you need to compile it
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 ```
+#### vim-airline
+A beautiful status bar which equals powerline + minibufexpl.
+Simply add it to the plugin list. And you need to config your *******local** terminal if you want to display fancy fonts.
+- Install Powerline follow the instructions [here](https://github.com/powerline/fonts)
+- Select powerline fonts for your terminal (iTerm, putty, SecureCRT etc.)
 
 ## Tmux Config
 

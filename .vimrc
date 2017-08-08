@@ -8,9 +8,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " Color and Theme
-Plugin 'Lokaltog/vim-powerline'
-" Plugin 'vim-airline/vim-airline'
-" Plugin 'vim-airline/vim-airline-themes'
+" Plugin 'Lokaltog/vim-powerline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 " AutoComplete and Program Tools
 Plugin 'Valloric/YouCompleteMe'
@@ -21,8 +21,8 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'scrooloose/nerdcommenter'
-" Plugin 'fholgado/minibufexpl.vim'
-Plugin 'weynhamz/vim-plugin-minibufexpl'
+"Plugin 'fholgado/minibufexpl.vim'
+" Plugin 'weynhamz/vim-plugin-minibufexpl'
 Plugin 'tpope/vim-fugitive'
 Plugin 'terryma/vim-smooth-scroll'
 call vundle#end()            " required
@@ -46,17 +46,45 @@ call vundle#end()            " required
     let NERDTreeWinSize=35
     let NERDTreeChDirMode=2
     let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
-
+    let NERDTreeShowBookmarks=1
     let NERDTreeWinPos="left"
     set encoding=utf-8
     nmap <F3> :NERDTreeToggle<cr>
     
+    " autocmd VimEnter * set winfixwidth
   " Tagbar
     let g:tagbar_width=35
     let g:tagbar_autofocus=1
+    " let g:tagbar_compact = 1
+    " let g:tagbar_sort = 0
     nmap <F4> :TagbarToggle<CR>
-    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+  "  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
   
+  " minibuffer
+    "map <Leader>bf :MiniBufExplorer<cr> 
+    "let g:miniBufExplAutoStart = 1
+    "let g:miniBufExplBuffersNeeded = 1
+    "let g:miniBufExplMapWindowNavVim = 1 
+    "let g:miniBufExplMapWindowNavArrows = 1 
+    "let g:miniBufExplMapCTabSwitchBufs = 1 
+    "let g:miniBufExplModSelTarget = 1  "
+ 
+    "nmap <F6> :NERDTreeToggle<CR> :Tagbar<CR> :MBEOpen<CR> 
+  
+  " airline
+    let g:airline_theme="wombat"
+    let g:airline_powerline_fonts = 1
+    let g:airline#extensions#tabline#enabled = 1
+    if !exists('g:airline_symbols')
+        let g:airline_symbols = {}
+    endif
+    let g:airline#extensions#tabline#buffer_nr_show = 1
+    "let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
+    nnoremap <S-N> :bn<CR>
+    nnoremap <S-P> :bp<CR>  
+    let g:airline#extensions#whitespace#enabled = 0
+    let g:airline#extensions#whitespace#symbol = '!'
+
   " indentLine
     let g:indentLine_char='┆'
     let g:indentLine_enabled = 1
@@ -71,13 +99,8 @@ call vundle#end()            " required
   
   " airline
     let g:airline_powerline_fonts = 1
-  " minibuffer
-    map <Leader>bf :MiniBufExplorer<cr> 
-    let g:miniBufExplMapWindowNavVim = 1 
-    let g:miniBufExplMapWindowNavArrows = 1 
-    let g:miniBufExplMapCTabSwitchBufs = 1 
-    let g:miniBufExplModSelTarget = 1  "
-  " CtrlP 
+    
+ " CtrlP 
     set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.png,*.jpg,*.jpeg,*.gif " MacOSX/Linux
     let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
     
@@ -182,7 +205,7 @@ call vundle#end()            " required
 	set splitbelow
 	set splitright
   " autocmd and file type
-  autocmd BufNewFile,BufRead *.md set filetype=markdown "Markdown to HTML
+  " autocmd BufNewFile,BufRead *.md set filetype=markdown "Markdown to HTML
   filetype on
   filetype plugin on
   filetype indent on
