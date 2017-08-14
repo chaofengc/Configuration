@@ -1,11 +1,11 @@
 # Vim and Tmux configuration
-![Example Image](example.png)
  - [Vim Config](#vim-config)
    * [Update to Vim 8](#update-to-vim-8)
    * [Plugin Notes](#plugin-notes)
  - [Tmux Config](#tmux-config)
  - [How to cooperate vim and tmux](#how-to-cooperate-vim-and-tmux)
  - [SecureCRT configuration](#securecrt-configuration)
+![Example Image](example.png)
 
 ## Vim Config
 My vimrc and some candidates
