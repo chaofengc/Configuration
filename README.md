@@ -1,4 +1,5 @@
 # Vim and Tmux configuration
+![Example Image](example.png)
  - [Vim Config](#vim-config)
    * [Update to Vim 8](#update-to-vim-8)
    * [Plugin Notes](#plugin-notes)
