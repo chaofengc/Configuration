@@ -41,8 +41,8 @@ Name    | Function
 'majutsushi/tagbar'                | Function and Variable Tag Bar
 'Yggdroot/indentLine'              | show indent 
 'jiangmiao/auto-pair'              | Auto pair ({["
-'tell-k/vim-autopep8'              | <F8> Auto format python file 
-'scrooloose/nerdcommenter'         | <F5> Quick comment 
+'tell-k/vim-autopep8'              | F8 Auto format python file 
+'scrooloose/nerdcommenter'         | F5 Quick comment 
 'tpope/vim-fugitive'               | Git command in vim
 'terryma/vim-smooth-scroll'        | Smooth scroll 
 'godlygeek/tabular'                | Markdown 
@@ -61,19 +61,18 @@ cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 ```
 
-#### Other Custom Settings
-*Normal Mode*
-- F3, NerdTree; F4, Tagbar; F6, NerdTree and Tagbar
-- F2, save and exit; Shift+s, save; Shift+q, exit  
-
-*Insert Mode*
-- Ctrl+l, ESC
-
-#### vim-airline
+#### Vim-airline
 A beautiful status bar which equals powerline + minibufexpl.
 Simply add it to the plugin list. And you need to config your **local** terminal if you want to display fancy fonts.
 - Install Powerline follow the instructions [here](https://github.com/powerline/fonts)
 - Select powerline fonts for your terminal (iTerm, putty, SecureCRT etc, you may need to restart your app to get the new fonts.)
+
+#### Other Custom Settings
+*Normal Mode*
+- F3, NerdTree; F4, Tagbar; F6, NerdTree and Tagbar
+- F2, save and exit; Shift+s, save; Shift+q, exit  
+*Insert Mode*
+- Ctrl+l, ESC
 
 ## Tmux Config
 
