@@ -15,7 +15,7 @@ My vimrc and some candidates
 - Reference: http://www.jianshu.com/p/f0513d18742a
 
 ### Update to Vim 8
-**Vim 8 has many good features, and support some convenient plugin. Update to vim 8 with the following lines.
+**Vim 8 supports some convenient plugin. Update to vim 8 with the following lines.
 ```
 sudo add-apt-repository ppa:jonathonf/vim     # get the newest version of vim
 sudo apt-get update && sudo apt-get upgrade   # update package
@@ -34,7 +34,7 @@ Name    | Function
 ----    | ---
 'vim-airline/vim-airline'          | Status bar
 'vim-airline/vim-airline-themes'   | Airline Themes 
-'altercation/vim-colors-solarized' | Color Theme
+'vim-scripts/wombat256.vim'        | Color Theme
 'Valloric/YouCompleteMe'           | Autocomplete
 'ctrlpvim/ctrlp.vim'               | File Search
 'scrooloose/nerdtree'              | File Tree
@@ -43,6 +43,12 @@ Name    | Function
 'jiangmiao/auto-pair'              | Auto pair ({["
 'tell-k/vim-autopep8'              | <F8> Auto format python file 
 'scrooloose/nerdcommenter'         | <F5> Quick comment 
+'tpope/vim-fugitive'               | Git command in vim
+'terryma/vim-smooth-scroll'        | Smooth scroll 
+'godlygeek/tabular'                | Markdown 
+'plasticboy/vim-markdown'          | Markdown
+
+Install these Plugins by `:PluginInstall` in Vim.
 
 #### YouCompleteMe
 Ultimate auto-complete plugin for Vim. After install it, you still need to set the configuration by copy the example configuration file and modify it.
@@ -54,11 +60,19 @@ Then, you need to compile it
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 ```
+
+#### Other Custom Settings
+**Normal Mode**
+- <F3>, NerdTree; <F4>, Tagbar; <F6>, NerdTree and Tagbar
+- <F2>, save and exit; Shift+s, save; Shift+q, exit
+**Insert Mode**
+- Ctrl+L, ESC
+
 #### vim-airline
 A beautiful status bar which equals powerline + minibufexpl.
-Simply add it to the plugin list. And you need to config your *******local** terminal if you want to display fancy fonts.
+Simply add it to the plugin list. And you need to config your **local** terminal if you want to display fancy fonts.
 - Install Powerline follow the instructions [here](https://github.com/powerline/fonts)
-- Select powerline fonts for your terminal (iTerm, putty, SecureCRT etc.)
+- Select powerline fonts for your terminal (iTerm, putty, SecureCRT etc, you may need to restart your app to get the new fonts.)
 
 ## Tmux Config
 
@@ -68,6 +82,7 @@ Main features are
 - Enable mouse to select window and panel, resize panel
 - Enlarge history to 10000 lines
 - Horizontal split: `bind-key s`, Vertical split: `bind-key v`
+- Date and Time on status bar.
 
 ## How to cooperate vim and tmux 
 For unknow reason, vim colortheme may not work in tmux without the following configuration  
