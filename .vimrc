@@ -1,6 +1,6 @@
 "--------------------------------------------------------------------------------
 " Vim configuration of fly-cfchen
-" Last Modified:    2017-08-07
+" Last Modified:    2017-08-14
 "--------------------------------------------------------------------------------
 
 " set the runtime path to include Vundle and initialize
@@ -13,6 +13,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-scripts/wombat256.vim'
+Plugin 'dracula/vim'
 " AutoComplete and Program Tools
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -22,6 +23,9 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'scrooloose/nerdcommenter'
+" Markdown Tools
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 "Plugin 'fholgado/minibufexpl.vim'
 " Plugin 'weynhamz/vim-plugin-minibufexpl'
 Plugin 'tpope/vim-fugitive'
@@ -45,7 +49,7 @@ call vundle#end()            " required
   " NERD tree
     let NERDChristmasTree=0
     let NERDTreeWinSize=35
-    let NERDTreeChDirMode=2
+
     let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
     let NERDTreeShowBookmarks=1
     let NERDTreeWinPos="left"
@@ -70,12 +74,12 @@ call vundle#end()            " required
     "let g:miniBufExplMapCTabSwitchBufs = 1 
     "let g:miniBufExplModSelTarget = 1  "
  
-    "nmap <F6> :NERDTreeToggle<CR> :Tagbar<CR> :MBEOpen<CR> 
+    nmap <F6> :NERDTreeToggle<CR> :Tagbar<CR> 
   
   " airline
-    "let g:airline_theme="solarized"
+    "let g:airline_theme="wombat"
     let g:airline_theme="luna"
-    let g:airline_solarized_bg='dark'
+    "let g:airline_solarized_bg='dark'
     let g:airline_powerline_fonts = 1
     let g:airline#extensions#tabline#enabled = 1
     if !exists('g:airline_symbols')
@@ -83,7 +87,7 @@ call vundle#end()            " required
     endif
     let g:airline#extensions#tabline#buffer_nr_show = 1
     "let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
-    nnoremap <S-N> :bn<CR>
+    nnoremap <TAB> :bn<CR>
     nnoremap <S-P> :bp<CR>  
     let g:airline#extensions#whitespace#enabled = 0
     let g:airline#extensions#whitespace#symbol = '!'
@@ -99,6 +103,12 @@ call vundle#end()            " required
   " NerdCommenter
     let mapleader='#'
     map <F5> <leader>ci <CR>
+  " Markdown 
+    let g:vim_markdown_folding_disabled = 1
+    let g:vim_markdown_no_default_key_mappings = 1
+    let g:vim_markdown_toc_autofit = 1
+    let g:vim_markdown_math = 1
+    let g:vim_markdown_conceal = 0
   
   " airline
     let g:airline_powerline_fonts = 1
@@ -177,6 +187,7 @@ call vundle#end()            " required
   " let g:solarized_termtrans = 1
     "colorscheme solarized
     colorscheme wombat256mod
+    "colorscheme dracula 
   "" GUI status
     set cursorline              " emphasize current line
     set statusline+=%{fugitive#statusline()} "  Git Hotness
@@ -229,14 +240,16 @@ call vundle#end()            " required
   map <C-k> <C-w>k
   map <C-l> <C-w>l
   " space and enter
-                        
-  " F2 save
-  noremap <F2> <Esc>:w<CR>
-  inoremap <F2> <Esc>:w<CR>
-  map <S-s> <Esc>:wq<CR>
-  map <S-q> <Esc>:q<CR>
-  imap <C-L> <Esc>
   
+  "Use F2 to save and exit"                       
+  noremap <F2> <Esc>:wq<CR> 
+  "Shift+s to save, normal mode"
+  nnoremap <S-s> <Esc>:w<CR> 
+  "Shift+q to exit, normal mode"
+  nnoremap <S-q> <Esc>:q<CR> 
+  imap <C-L> <Esc>
+  "Use backspace(cmd + del in mac) to delete in normal mode" 
+  nnoremap <BS> x   
 "------------------------------------
 " Functions 
 "------------------------------------

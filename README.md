@@ -15,7 +15,7 @@ My vimrc and some candidates
 - Reference: http://www.jianshu.com/p/f0513d18742a
 
 ### Update to Vim 8
-**Vim 8 supports some convenient plugin. Update to vim 8 with the following lines.
+Vim 8 supports some convenient plugin. Update to vim 8 with the following lines.
 ```
 sudo add-apt-repository ppa:jonathonf/vim     # get the newest version of vim
 sudo apt-get update && sudo apt-get upgrade   # update package
@@ -62,11 +62,12 @@ cd ~/.vim/bundle/YouCompleteMe
 ```
 
 #### Other Custom Settings
-**Normal Mode**
-- <F3>, NerdTree; <F4>, Tagbar; <F6>, NerdTree and Tagbar
-- <F2>, save and exit; Shift+s, save; Shift+q, exit
-**Insert Mode**
-- Ctrl+L, ESC
+*Normal Mode*
+- F3, NerdTree; F4, Tagbar; F6, NerdTree and Tagbar
+- F2, save and exit; Shift+s, save; Shift+q, exit  
+
+*Insert Mode*
+- Ctrl+l, ESC
 
 #### vim-airline
 A beautiful status bar which equals powerline + minibufexpl.
