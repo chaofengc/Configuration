@@ -1,4 +1,4 @@
-"--------------------------------------------------------------------------------
+
 " Vim configuration of fly-cfchen
 " Last Modified:    2017-08-14
 "--------------------------------------------------------------------------------
@@ -36,6 +36,7 @@ call vundle#end()            " required
 "------------------------------------
 " Plugin Settings  
 "------------------------------------
+    let mapleader=","
   " Fugitive 
     set diffopt+=vertical
     autocmd BufReadPost fugitive://* set bufhidden=delete
@@ -65,16 +66,6 @@ call vundle#end()            " required
     " let g:tagbar_sort = 0
     nmap <F4> :TagbarToggle<CR>
   "  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-  
-  " minibuffer
-    "map <Leader>bf :MiniBufExplorer<cr> 
-    "let g:miniBufExplAutoStart = 1
-    "let g:miniBufExplBuffersNeeded = 1
-    "let g:miniBufExplMapWindowNavVim = 1 
-    "let g:miniBufExplMapWindowNavArrows = 1 
-    "let g:miniBufExplMapCTabSwitchBufs = 1 
-    "let g:miniBufExplModSelTarget = 1  "
- 
     nmap <F6> :NERDTreeToggle<CR> :Tagbar<CR> 
   
   " airline
@@ -102,8 +93,8 @@ call vundle#end()            " required
     let g:autopep8_disable_show_diff=1
   
   " NerdCommenter
-    let mapleader='#'
-    map <F5> <leader>ci <CR>
+    nmap <F5> <leader>ci 
+    let g:NERDSpaceDelims=1
   " Markdown 
     let g:vim_markdown_folding_disabled = 1
     let g:vim_markdown_no_default_key_mappings = 1
@@ -156,11 +147,10 @@ call vundle#end()            " required
 
     let g:ycm_error_symbol = '>>'
     let g:ycm_warning_symbol = '>*'
-    let mapleader = ","
     nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
     nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
     nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
-    nmap <F4> :YcmDiags<CR>
+    " nmap <F4> :YcmDiags<CR>
     
 "------------------------------------
 " General Settings  
