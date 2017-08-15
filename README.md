@@ -15,6 +15,8 @@ My vimrc and some candidates
 - https://github.com/PytLab/dotfiles
 - Reference: http://www.jianshu.com/p/f0513d18742a
 
+[**HERE**](http://learnvimscriptthehardway.stevelosh.com/chapters/01.html) is a perfect book for you to learn vim scripts.
+
 ### Update to Vim 8
 Vim 8 supports some convenient plugin. Update to vim 8 with the following lines.
 ```
