@@ -23,6 +23,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-surround'
 " Markdown Tools
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -152,6 +153,14 @@ call vundle#end()            " required
     inoremap <expr> <Up>       pumvisible() ? '\<C-p>' : '\<Up>'
     inoremap <expr> <PageDown> pumvisible() ? '\<PageDown>\<C-p>\<C-n>' : '\<PageDown>'
     inoremap <expr> <PageUp>   pumvisible() ? '\<PageUp>\<C-p>\<C-n>' : '\<PageUp>'
+
+    let g:ycm_error_symbol = '>>'
+    let g:ycm_warning_symbol = '>*'
+    let mapleader = ","
+    nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+    nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+    nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+    nmap <F4> :YcmDiags<CR>
     
 "------------------------------------
 " General Settings  

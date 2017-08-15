@@ -42,6 +42,7 @@ Name    | Function
 'majutsushi/tagbar'                | Function and Variable Tag Bar
 'Yggdroot/indentLine'              | show indent 
 'jiangmiao/auto-pair'              | Auto pair ({["
+'tpope/vim-surround'               | Add, delete, change delimiters 
 'tell-k/vim-autopep8'              | F8 Auto format python file 
 'scrooloose/nerdcommenter'         | F5 Quick comment 
 'tpope/vim-fugitive'               | Git command in vim
