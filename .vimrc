@@ -93,7 +93,7 @@ call vundle#end()            " required
     let g:autopep8_disable_show_diff=1
   
   " NerdCommenter
-    nmap <F5> <leader>ci 
+    map <F5> <leader>ci 
     let g:NERDSpaceDelims=1
   " Markdown 
     let g:vim_markdown_folding_disabled = 1
