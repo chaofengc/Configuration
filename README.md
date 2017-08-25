@@ -52,7 +52,11 @@ Name    | Function
 'godlygeek/tabular'                | Markdown 
 'plasticboy/vim-markdown'          | Markdown
 
-Install these Plugins by `:PluginInstall` in Vim.
+Get `Vundle` first by
+```
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+Then install these Plugins by `:PluginInstall` in Vim.
 
 #### YouCompleteMe
 Ultimate auto-complete plugin for Vim. After install it, you still need to set the configuration by copy the example configuration file and modify it.
