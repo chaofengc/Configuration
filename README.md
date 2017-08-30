@@ -59,15 +59,17 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 Then install these Plugins by `:PluginInstall` in Vim.
 
 #### YouCompleteMe
-Ultimate auto-complete plugin for Vim. After install it, you still need to set the configuration by copy the example configuration file and modify it.
-```
-cp ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py ~/.vim  # Copy the example config file
-```
-Then, you need to compile it
+Ultimate auto-complete plugin for Vim. After installation, you need to compile it
 ```
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 ```
+You also need to modify the following path in `.vimrc`
+```
+let g:ycm_global_ycm_extra_conf = "/home/cfchen/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+let g:ycm_server_python_interpreter= "/home/cfchen/anaconda2/bin/python2.7" 
+```
+
 #### Vim airline
 
 Please make sure your terminal supports `utf-8`. Otherwise, airline symbol may not show properly.
