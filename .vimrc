@@ -150,24 +150,26 @@ call vundle#end()            " required
     let g:ycm_complete_in_comments = 1
     let g:ycm_complete_in_strings = 1
     let g:ycm_collect_identifiers_from_comments_and_strings = 0
-    let g:ycm_global_ycm_extra_conf = '/home/cfchen/.vim/.ycm_extra_conf.py'
+    let g:ycm_global_ycm_extra_conf = "/home/cfchen/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
     let g:syntastic_check_on_open=1
     let g:syntastic_enable_signs=1
     let g:syntastic_cpp_check_header = 1
     let g:syntastic_cpp_remove_include_errors = 1
     "Close window when complete"
     let g:ycm_autoclose_preview_window_after_completion=1
-    let g:ycm_server_python_interpreter='/home/cfchen/anaconda2/bin/python2.7'
-    "Close popup menue when leave insert mode"\
-    autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-    " inoremap <expr> <CR>       pumvisible() ? '<C-y>' : '\<CR>'   
-    inoremap <expr> <Down>     pumvisible() ? '\<C-n>' : '\<Down>'
-    inoremap <expr> <Up>       pumvisible() ? '\<C-p>' : '\<Up>'
-    inoremap <expr> <PageDown> pumvisible() ? '\<PageDown>\<C-p>\<C-n>' : '\<PageDown>'
-    inoremap <expr> <PageUp>   pumvisible() ? '\<PageUp>\<C-p>\<C-n>' : '\<PageUp>'
-
+    let g:ycm_server_python_interpreter= "/home/cfchen/anaconda2/bin/python2.7"
     let g:ycm_error_symbol = '>>'
     let g:ycm_warning_symbol = '>*'
+    "Close popup menue when leave insert mode"\
+    autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+    " youcompleteme select keys
+    let g:ycm_key_list_select_completion = ['<Down>']
+    let g:ycm_key_list_previous_completion = ['<Up>']
+    " inoremap <expr> <CR>       pumvisible() ? '<C-y>' : '\<CR>'   
+    " inoremap <expr> <Down>     pumvisible() ? '\<C-n>' : '\<Down>'
+    " inoremap <expr> <Up>       pumvisible() ? '\<C-p>' : '\<Up>'
+    " inoremap <expr> <PageDown> pumvisible() ? '\<PageDown>\<C-p>\<C-n>' : '\<PageDown>'
+    " inoremap <expr> <PageUp>   pumvisible() ? '\<PageUp>\<C-p>\<C-n>' : '\<PageUp>'
     nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
     nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
     nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
