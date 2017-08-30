@@ -69,12 +69,6 @@ cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 ```
 
-#### Vim-airline
-A beautiful status bar which equals powerline + minibufexpl.
-Simply add it to the plugin list. And you need to config your **local** terminal if you want to display fancy fonts.
-- Install Powerline follow the instructions [here](https://github.com/powerline/fonts)
-- Select powerline fonts for your terminal (iTerm, putty, SecureCRT etc, you may need to restart your app to get the new fonts.)
-
 #### Other Custom Settings
 *Normal Mode*
 - F3, NerdTree; F4, Tagbar; F6, NerdTree and Tagbar
