@@ -21,7 +21,7 @@ My vimrc and some candidates
 Vim 8 supports some convenient plugin. Update to vim 8 with the following lines.
 ```
 sudo add-apt-repository ppa:jonathonf/vim     # get the newest version of vim
-sudo apt-get update && sudo apt-get upgrade   # update package
+sudo apt-get update vim && sudo apt-get upgrade vim  # update package
 sudo apt-get install vim-nox                  # add python3 support
 ```
 To work with python 2
@@ -61,7 +61,7 @@ Then install these Plugins by `:PluginInstall` in Vim.
 #### YouCompleteMe
 Ultimate auto-complete plugin for Vim. After install it, you still need to set the configuration by copy the example configuration file and modify it.
 ```
-cp ~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py ~/.vim  # Copy the example config file
+cp ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py ~/.vim  # Copy the example config file
 ```
 Then, you need to compile it
 ```
