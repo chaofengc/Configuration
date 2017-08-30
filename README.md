@@ -68,6 +68,30 @@ Then, you need to compile it
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 ```
+#### Vim airline
+
+Please make sure your terminal supports `utf-8`. Otherwise, airline symbol may not show properly.
+If you don't want the fancy symbols, just modify the following airline symbols to any character you want in `.vimrc`.
+```
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.maxlinenr = '㏑'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.spell = 'Ꞩ'
+let g:airline_symbols.notexists = '∄'
+let g:airline_symbols.whitespace = 'Ξ'
+```
 
 #### Other Custom Settings
 *Normal Mode*
