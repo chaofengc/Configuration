@@ -98,6 +98,7 @@ call vundle#end()            " required
     let g:airline_symbols.whitespace = 'Ξ'
     
     let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tabline#buffer_nr_show = 1
     "let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
     nnoremap <TAB> :bn<CR>
     nnoremap <S-P> :bp<CR>  
