@@ -64,12 +64,6 @@ Ultimate auto-complete plugin for Vim. After installation, you need to compile i
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 ```
-You also need to modify the following path in `.vimrc`
-```
-let g:ycm_global_ycm_extra_conf = "/home/cfchen/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
-let g:ycm_server_python_interpreter= "/home/cfchen/anaconda2/bin/python2.7" 
-```
-
 #### Vim airline
 
 Please make sure your terminal supports `utf-8`. Otherwise, airline symbol may not show properly.
