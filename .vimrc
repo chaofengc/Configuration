@@ -71,8 +71,9 @@ call vundle#end()            " required
   
   " airline
     "let g:airline_theme="wombat"
-    let g:airline_theme="luna"
-    "let g:airline_solarized_bg='dark'
+    " let g:airline_theme="luna"
+    let g:airline_theme="solarized"
+    let g:airline_solarized_bg='dark'
     let g:airline_powerline_fonts = 0 
     " old vim-powerline symbols
     if !exists('g:airline_symbols')
@@ -164,8 +165,8 @@ call vundle#end()            " required
     "Close popup menue when leave insert mode"\
     autocmd InsertLeave * if pumvisible() == 0|pclose|endif
     " youcompleteme select keys
-    let g:ycm_key_list_select_completion = ['<Down>']
-    let g:ycm_key_list_previous_completion = ['<Up>']
+    " let g:ycm_key_list_select_completion = ['<Down>']
+    " let g:ycm_key_list_previous_completion = ['<Up>']
     " inoremap <expr> <CR>       pumvisible() ? '<C-y>' : '\<CR>'   
     " inoremap <expr> <Down>     pumvisible() ? '\<C-n>' : '\<Down>'
     " inoremap <expr> <Up>       pumvisible() ? '\<C-p>' : '\<Up>'
@@ -206,10 +207,10 @@ call vundle#end()            " required
     set term=screen-256color
     syntax enable
     set background=dark
-    "let g:solarized_termcolors=256
-  " let g:solarized_termtrans = 1
-    "colorscheme solarized
-    colorscheme wombat256mod
+    let g:solarized_termcolors=256
+    let g:solarized_termtrans = 1
+    colorscheme solarized
+    " colorscheme wombat256mod
     "colorscheme dracula 
   "" GUI status
     set cursorline              " emphasize current line
