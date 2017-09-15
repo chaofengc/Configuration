@@ -20,8 +20,11 @@ My vimrc and some candidates
 ### Update to Vim 8
 Vim 8 supports some convenient plugin. Update to vim 8 with the following lines.
 ```
-sudo add-apt-repository ppa:jonathonf/vim     # get the newest version of vim
-sudo apt-get update vim && sudo apt-get upgrade vim  # update package
+sudo add-apt-repository ppa:jonathonf/vim        # get the newest version of vim
+sudo apt-get update && sudo apt-get install vim  # update package
+```
+To work with python 3
+```
 sudo apt-get install vim-nox                  # add python3 support
 ```
 To work with python 2
