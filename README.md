@@ -70,7 +70,7 @@ cd ~/.vim/bundle/YouCompleteMe
 #### Vim airline
 
 Please make sure your terminal supports `utf-8`. Otherwise, airline symbol may not show properly.
-If you don't want the fancy symbols, just modify the following airline symbols to any character you want in `.vimrc`.
+If you don't want the fancy symbols or there are still messy codes, just modify the following airline symbols to any character you want in `.vimrc`.
 ```
 let g:airline_left_sep = '⮀'
 let g:airline_left_alt_sep = '⮁'
