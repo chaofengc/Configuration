@@ -51,7 +51,7 @@ call vundle#end()            " required
 
   " NERD tree
     let NERDChristmasTree=0
-    let NERDTreeWinSize=35
+    let NERDTreeWinSize=30
 
     let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
     let NERDTreeShowBookmarks=1
@@ -61,7 +61,7 @@ call vundle#end()            " required
     
     " autocmd VimEnter * set winfixwidth
   " Tagbar
-    let g:tagbar_width=35
+    let g:tagbar_width=25
     let g:tagbar_autofocus=1
     " let g:tagbar_compact = 1
     " let g:tagbar_sort = 0
@@ -70,6 +70,9 @@ call vundle#end()            " required
     nmap <F6> :NERDTreeToggle<CR> :Tagbar<CR> 
   
   " airline
+    set re=1  "Prevent airline to slow down vim
+    set ttyfast
+    set lazyredraw
     "let g:airline_theme="wombat"
     " let g:airline_theme="luna"
     let g:airline_theme="solarized"
@@ -102,10 +105,23 @@ call vundle#end()            " required
     let g:airline#extensions#tabline#enabled = 1
     let g:airline#extensions#tabline#buffer_nr_show = 1
     "let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
-    nnoremap <TAB> :bn<CR>
-    nnoremap <S-P> :bp<CR>  
+    " nnoremap <S-TAB> :bp<CR>  
     let g:airline#extensions#whitespace#enabled = 0
     let g:airline#extensions#whitespace#symbol = '!'
+
+    " Buffer config
+    set hidden
+    nnoremap <TAB> :bn<CR>
+    nmap <leader>b :enew<cr>
+    " Move to the next buffer
+    nmap <leader>l :bnext<CR>
+    " " Move to the previous buffer
+    nmap <leader>h :bprevious<CR>"
+    " Close the current buffer and move to the previous one
+    " This replicates the idea of closing a tab
+    nmap <leader>bq :bp <BAR> bd #<CR>
+    "" Show all open buffers and their status
+    nmap <leader>bl :ls<CR>
 
   " indentLine
     let g:indentLine_char='┆'
@@ -124,9 +140,6 @@ call vundle#end()            " required
     let g:vim_markdown_toc_autofit = 1
     let g:vim_markdown_math = 1
     let g:vim_markdown_conceal = 0
-  
-  " airline
-    let g:airline_powerline_fonts = 1
     
  " CtrlP 
     set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.png,*.jpg,*.jpeg,*.gif " MacOSX/Linux
@@ -159,7 +172,7 @@ call vundle#end()            " required
     let g:syntastic_cpp_remove_include_errors = 1
     "Close window when complete"
     let g:ycm_autoclose_preview_window_after_completion=1
-    " let g:ycm_server_python_interpreter= 'python' 
+    " let g:ycm_server_python_interpreter= '/home/cfchen/anaconda2/bin/python' 
     let g:ycm_error_symbol = '>>'
     let g:ycm_warning_symbol = '>*'
     "Close popup menue when leave insert mode"\
