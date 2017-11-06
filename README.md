@@ -133,3 +133,5 @@ Remember keys in Mac. If you want to remember ssh keys in mac, you must turn off
 1. Show path in tab, `Preferences -> General -> Default Session -> Edit Default Settings -> Terminal -> Emulation`.  
 Change terminal to `Xterm`, tick `ANSI color`. Change to a bigger `Scroll back buffer` if you want. (Reference [blog](http://blog.csdn.net/delphiwcdj/article/details/7226921)) 
 1. Enable `Fn` keys in Mac. Change terminal to `Xterm`.
+### References
+1. [SecureCRT实用配置](http://xstarcd.github.io/wiki/windows/SecureCRT_confs.html)
