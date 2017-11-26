@@ -20,8 +20,11 @@ My vimrc and some candidates
 ### Update to Vim 8
 Vim 8 supports some convenient plugin. Update to vim 8 with the following lines.
 ```
-sudo add-apt-repository ppa:jonathonf/vim     # get the newest version of vim
-sudo apt-get update vim && sudo apt-get upgrade vim  # update package
+sudo add-apt-repository ppa:jonathonf/vim        # get the newest version of vim
+sudo apt-get update && sudo apt-get install vim  # update package
+```
+To work with python 3
+```
 sudo apt-get install vim-nox                  # add python3 support
 ```
 To work with python 2
@@ -67,7 +70,7 @@ cd ~/.vim/bundle/YouCompleteMe
 #### Vim airline
 
 Please make sure your terminal supports `utf-8`. Otherwise, airline symbol may not show properly.
-If you don't want the fancy symbols, just modify the following airline symbols to any character you want in `.vimrc`.
+If you don't want the fancy symbols or there are still messy codes, just modify the following airline symbols to any character you want in `.vimrc`.
 ```
 let g:airline_left_sep = '⮀'
 let g:airline_left_alt_sep = '⮁'
@@ -130,3 +133,5 @@ Remember keys in Mac. If you want to remember ssh keys in mac, you must turn off
 1. Show path in tab, `Preferences -> General -> Default Session -> Edit Default Settings -> Terminal -> Emulation`.  
 Change terminal to `Xterm`, tick `ANSI color`. Change to a bigger `Scroll back buffer` if you want. (Reference [blog](http://blog.csdn.net/delphiwcdj/article/details/7226921)) 
 1. Enable `Fn` keys in Mac. Change terminal to `Xterm`.
+### References
+1. [SecureCRT实用配置](http://xstarcd.github.io/wiki/windows/SecureCRT_confs.html)
