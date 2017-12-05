@@ -18,7 +18,7 @@ My vimrc and some candidates
 [**HERE**](http://learnvimscriptthehardway.stevelosh.com/chapters/01.html) is a perfect book for you to learn vim scripts.
 
 ### Update to Vim 8
-Vim 8 supports some convenient plugin. Update to vim 8 with the following lines.
+Check Vim version by `:ve(rsion)` in Vim. Vim 8 supports some convenient plugin. Update to vim 8 with the following lines.
 ```
 sudo add-apt-repository ppa:jonathonf/vim        # get the newest version of vim
 sudo apt-get update && sudo apt-get install vim  # update package
