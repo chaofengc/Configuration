@@ -123,7 +123,7 @@ set term=screen-256color
 ```
 Note: please use `source ~/.bashrc` to make it effective.
 
-## [SecureCRT configuration](#securecrt-config)
+## SecureCRT configuration
 Remember keys in Mac. If you want to remember ssh keys in mac, you must turn off the key chains in `Preferences -> General -> Mac options`
 ### Color 
 1. Change the theme to White/Black in `Preferences -> General -> Default Session -> Edit Default Settings -> Appearance`
