@@ -24,8 +24,9 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
+Plugin 'junegunn/vim-easy-align'
 " Markdown Tools
-Plugin 'godlygeek/tabular'
+" Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 "Plugin 'fholgado/minibufexpl.vim'
 " Plugin 'weynhamz/vim-plugin-minibufexpl'
@@ -129,6 +130,10 @@ call vundle#end()            " required
   " autopep8 \
     autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
     let g:autopep8_disable_show_diff=1
+
+  " Easy Align
+    xmap ga <Plug>(EasyAlign)
+    nmap ga <Plug>(EasyAlign)
   
   " NerdCommenter
     map <F5> <leader>ci 

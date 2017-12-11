@@ -36,24 +36,24 @@ sudo update-alternatives --set vi /usr/bin/vim.nox-py2
 ### Plugin Notes
 Plugin List
 
-Name    | Function
-----    | ---
-'vim-airline/vim-airline'          | Status bar
-'vim-airline/vim-airline-themes'   | Airline Themes 
-'vim-scripts/wombat256.vim'        | Color Theme
-'Valloric/YouCompleteMe'           | Autocomplete
-'ctrlpvim/ctrlp.vim'               | File Search
-'scrooloose/nerdtree'              | File Tree
-'majutsushi/tagbar'                | Function and Variable Tag Bar
-'Yggdroot/indentLine'              | show indent 
-'jiangmiao/auto-pair'              | Auto pair ({["
-'tpope/vim-surround'               | Add, delete, change delimiters 
-'tell-k/vim-autopep8'              | F8 Auto format python file 
-'scrooloose/nerdcommenter'         | F5 Quick comment 
-'tpope/vim-fugitive'               | Git command in vim
-'terryma/vim-smooth-scroll'        | Smooth scroll 
-'godlygeek/tabular'                | Markdown 
-'plasticboy/vim-markdown'          | Markdown
+Name                             | Function
+----                             | ---
+'vim-airline/vim-airline'        | Status bar
+'vim-airline/vim-airline-themes' | Airline Themes
+'vim-scripts/wombat256.vim'      | Color Theme
+'Valloric/YouCompleteMe'         | Autocomplete
+'ctrlpvim/ctrlp.vim'             | File Search
+'scrooloose/nerdtree'            | File Tree
+'majutsushi/tagbar'              | Function and Variable Tag Bar
+'Yggdroot/indentLine'            | show indent
+'jiangmiao/auto-pair'            | Auto pair ({["
+'tpope/vim-surround'             | Add, delete, change delimiters
+'tell-k/vim-autopep8'            | F8 Auto format python file
+'scrooloose/nerdcommenter'       | F5 Quick comment
+'tpope/vim-fugitive'             | Git command in vim
+'terryma/vim-smooth-scroll'      | Smooth scroll
+'godlygeek/tabular'              | Alignment
+'plasticboy/vim-markdown'        | Markdown
 
 Get `Vundle` first by
 ```
@@ -72,23 +72,23 @@ cd ~/.vim/bundle/YouCompleteMe
 Please make sure your terminal supports `utf-8`. Otherwise, airline symbol may not show properly.
 If you don't want the fancy symbols or there are still messy codes, just modify the following airline symbols to any character you want in `.vimrc`.
 ```
-let g:airline_left_sep = '⮀'
-let g:airline_left_alt_sep = '⮁'
-let g:airline_right_sep = '⮂'
-let g:airline_right_alt_sep = '⮃'
-let g:airline_symbols.crypt = '🔒'
-let g:airline_symbols.linenr = '☰'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.maxlinenr = ''
-let g:airline_symbols.maxlinenr = '㏑'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.spell = 'Ꞩ'
-let g:airline_symbols.notexists = '∄'
+let g:airline_left_sep           = '⮀'
+let g:airline_left_alt_sep       = '⮁'
+let g:airline_right_sep          = '⮂'
+let g:airline_right_alt_sep      = '⮃'
+let g:airline_symbols.crypt      = '🔒'
+let g:airline_symbols.linenr     = '☰'
+let g:airline_symbols.linenr     = '␊'
+let g:airline_symbols.linenr     = '␤'
+let g:airline_symbols.linenr     = '¶'
+let g:airline_symbols.maxlinenr  = ''
+let g:airline_symbols.maxlinenr  = '㏑'
+let g:airline_symbols.branch     = '⎇'
+let g:airline_symbols.paste      = 'ρ'
+let g:airline_symbols.paste      = 'Þ'
+let g:airline_symbols.paste      = '∥'
+let g:airline_symbols.spell      = 'Ꞩ'
+let g:airline_symbols.notexists  = '∄'
 let g:airline_symbols.whitespace = 'Ξ'
 ```
 
