@@ -21,16 +21,16 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'Yggdroot/indentLine'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'tell-k/vim-autopep8'
+" Plugin 'tell-k/vim-autopep8'
+Plugin 'Chiel92/vim-autoformat'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
 Plugin 'junegunn/vim-easy-align'
 " Markdown Tools
 " Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-"Plugin 'fholgado/minibufexpl.vim'
-" Plugin 'weynhamz/vim-plugin-minibufexpl'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-unimpaired'
 Plugin 'terryma/vim-smooth-scroll'
 call vundle#end()            " required
 
@@ -128,8 +128,10 @@ call vundle#end()            " required
     let g:indentLine_enabled = 1
 
   " autopep8 \
-    autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
-    let g:autopep8_disable_show_diff=1
+    " autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
+    " let g:autopep8_disable_show_diff=1
+    noremap <F8> :Autoformat<CR>
+    let g:autoformat_verbosemode=1
 
   " Easy Align
     xmap ga <Plug>(EasyAlign)
@@ -288,7 +290,7 @@ call vundle#end()            " required
   nnoremap <S-s> <Esc>:w<CR> 
   "Shift+q to exit, normal mode"
   nnoremap <S-q> <Esc>:q<CR> 
-  imap <C-L> <Esc>
+  imap <C-l> <Esc>
   "Use backspace(cmd + del in mac) to delete in normal mode" 
   nnoremap <BS> x   
 "------------------------------------
