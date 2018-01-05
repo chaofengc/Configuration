@@ -287,7 +287,8 @@ call vundle#end()            " required
   "Use F2 to save and exit"                       
   noremap <F2> <Esc>:wq<CR> 
   "Shift+s to save, normal mode"
-  nnoremap <S-s> <Esc>:w<CR> 
+  " nnoremap <S-s> <Esc>:w<CR> 
+  nnoremap <S-s> :Gwrite<CR> 
   "Shift+q to exit, normal mode"
   nnoremap <S-q> <Esc>:q<CR> 
   imap <C-l> <Esc>
