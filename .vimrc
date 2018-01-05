@@ -136,7 +136,13 @@ call vundle#end()            " required
   " Easy Align
     xmap ga <Plug>(EasyAlign)
     nmap ga <Plug>(EasyAlign)
-  
+
+  " Fugitive
+    nmap gw :Gwrite<CR> 
+    nmap gb :Gblame<CR>
+    nmap gs :Gstatus<CR>
+    nmap gd :Gdiff<CR>
+
   " NerdCommenter
     map <F5> <leader>ci 
     let g:NERDSpaceDelims=1
@@ -287,9 +293,8 @@ call vundle#end()            " required
   "Use F2 to save and exit"                       
   noremap <F2> <Esc>:wq<CR> 
   "Shift+s to save, normal mode"
-  " nnoremap <S-s> <Esc>:w<CR> 
-  nnoremap <S-s> :Gwrite<CR> 
-  "Shift+q to exit, normal mode"
+  nnoremap <S-s> <Esc>:w<CR> 
+  " Shift+q to exit, normal mode"
   nnoremap <S-q> <Esc>:q<CR> 
   imap <C-l> <Esc>
   "Use backspace(cmd + del in mac) to delete in normal mode" 
