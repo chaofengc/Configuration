@@ -83,7 +83,7 @@ Main features are
 - Rebind `Ctrl+b` to `Ctrl+x`
 - Enable mouse to select window and panel, resize panel
 - Enlarge history to 10000 lines
-- Horizontal split: `bind-key -`, Vertical split: `bind-key [`
+- Horizontal split: `bind-key -`, Vertical split: `bind-key ]`
 - Date and Time on status bar.
 
 ## How to cooperate vim and tmux 
