@@ -71,7 +71,7 @@ cd ~/.vim/bundle/YouCompleteMe
 #### Other Custom Settings
 *Normal Mode*
 - F3, NerdTree; F4, Tagbar; F6, NerdTree and Tagbar
-- F2, save and exit; Shift+s, save; Shift+q, exit
+- F2, save and exit; <Space>+s, save; <Shift>+q, exit
 
 *Insert Mode*
 - Ctrl+l, ESC

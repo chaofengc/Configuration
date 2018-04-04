@@ -292,10 +292,8 @@ call vundle#end()            " required
   " space and enter
   
   "Use F2 to save and exit"                       
-  noremap <F2> <Esc>:wq<CR> 
-  "Shift+s to save, normal mode"
+  noremap  <leader>wq  <Esc>:wq<CR> 
   nnoremap <leader>w <Esc>:w<CR> 
-  " Shift+q to exit, normal mode"
   nnoremap <leader>q <Esc>:q<CR> 
   imap <C-l> <Esc>
   "Use backspace(cmd + del in mac) to delete in normal mode" 
