@@ -292,7 +292,7 @@ call vundle#end()            " required
   " space and enter
   
   "Use F2 to save and exit"                       
-  noremap  <leader>wq  <Esc>:wq<CR> 
+  " noremap  <leader>wq  <Esc>:wq<CR> 
   nnoremap <leader>w <Esc>:w<CR> 
   nnoremap <leader>q <Esc>:q<CR> 
   imap <C-l> <Esc>
