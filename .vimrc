@@ -37,8 +37,8 @@ call vundle#end()            " required
 "------------------------------------
 " Plugin Settings  
 "------------------------------------
-    let mapleader=","
-  " Fugitive 
+    let mapleader=" "
+    
     set diffopt+=vertical
     autocmd BufReadPost fugitive://* set bufhidden=delete
     " If doing a diff. Upon writing changes to file, automatically update the
@@ -294,9 +294,9 @@ call vundle#end()            " required
   "Use F2 to save and exit"                       
   noremap <F2> <Esc>:wq<CR> 
   "Shift+s to save, normal mode"
-  nnoremap <S-s> <Esc>:w<CR> 
+  nnoremap <leader>w <Esc>:w<CR> 
   " Shift+q to exit, normal mode"
-  nnoremap <S-q> <Esc>:q<CR> 
+  nnoremap <leader>q <Esc>:q<CR> 
   imap <C-l> <Esc>
   "Use backspace(cmd + del in mac) to delete in normal mode" 
   nnoremap <BS> x   
