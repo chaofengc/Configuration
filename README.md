@@ -72,7 +72,7 @@ cd ~/.vim/bundle/YouCompleteMe
 #### Extra Dependencies of Plugins 
 - `tagbar` F4, displays tags in a window
 - `autopep8` F8, automatically formats Python code to conform to the PEP 8 style guide. **(Not work very well)**
-- `autoflake` F9, automatically remove unused imports and variables in current python file. 
+- `autoflake` F9, automatically remove unused imports and variables in current python file.   
 To make them work, you should install the following packages:
 ```
 conda install -c conda-forge ctags
@@ -82,8 +82,9 @@ pip install autoflake
 
 #### Other Custom Settings
 *Normal Mode*
-- F3, NerdTree; F4, Tagbar; F6, NerdTree and Tagbar
-- F2, save and exit; <Space>+s, save; <Shift>+q, exit
+- map `<Space>` as `<leader>`
+- F3 or `<leader>+m`, NerdTree; F4 or `<leader>+t`, Tagbar; F6, NerdTree and Tagbar
+- F2, write and exit; `<leader>`+w, write; `<leader>+q`, exit
 
 *Insert Mode*
 - Ctrl+l, ESC

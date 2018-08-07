@@ -59,6 +59,7 @@ call vundle#end()            " required
     let NERDTreeWinPos="left"
     set encoding=utf-8
     nmap <F3> :NERDTreeToggle<cr>
+    nmap <leader>m :NERDTreeToggle<cr> 
     
     " autocmd VimEnter * set winfixwidth
   " Tagbar
