@@ -21,6 +21,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'Yggdroot/indentLine'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'tell-k/vim-autoflake'
 " Plugin 'tell-k/vim-autopep8'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'scrooloose/nerdcommenter'
@@ -133,6 +134,8 @@ call vundle#end()            " required
     " let g:autopep8_disable_show_diff=1
     noremap <F8> :Autoformat<CR>
     let g:autoformat_verbosemode=1
+    let g:autoflake_remove_all_unused_imports=1
+    let g:autoflake_remove_unused_variables=1
 
   " Easy Align
     xmap ga <Plug>(EasyAlign)

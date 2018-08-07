@@ -48,6 +48,7 @@ Name                             | Function
 'jiangmiao/auto-pair'            | Auto pair ({["
 'tpope/vim-surround'             | Add, delete, change delimiters
 'tell-k/vim-autopep8'            | F8 Auto format python file
+'tell-k/vim-autoflake'           | F9 Remove unused imports and variable in python file 
 'scrooloose/nerdcommenter'       | F5 Quick comment
 'tpope/vim-fugitive'             | Git wrapper in vim
 'terryma/vim-smooth-scroll'      | Smooth scroll
@@ -66,6 +67,15 @@ Ultimate auto-complete plugin for Vim. After installation, you need to compile i
 ```
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
+```
+
+#### autopep8 and autoflake
+- `autopep8` F8, automatically formats Python code to conform to the PEP 8 style guide. *(Not work very well)*
+- `autoflake` F9, automatically remove unused imports and variables in current python file. 
+To make them work, you should install the following packages:
+```
+pip install autopep8
+pip install autoflake
 ```
 
 #### Other Custom Settings
