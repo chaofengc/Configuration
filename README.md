@@ -69,11 +69,13 @@ cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 ```
 
-#### autopep8 and autoflake
-- `autopep8` F8, automatically formats Python code to conform to the PEP 8 style guide. *(Not work very well)*
+#### Extra Dependencies of Plugins 
+- `tagbar` F4, displays tags in a window
+- `autopep8` F8, automatically formats Python code to conform to the PEP 8 style guide. **(Not work very well)**
 - `autoflake` F9, automatically remove unused imports and variables in current python file. 
 To make them work, you should install the following packages:
 ```
+conda install -c conda-forge ctags
 pip install autopep8
 pip install autoflake
 ```
