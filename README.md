@@ -73,6 +73,7 @@ cd ~/.vim/bundle/YouCompleteMe
 - `tagbar` F4, displays tags in a window
 - `autopep8` F8, automatically formats Python code to conform to the PEP 8 style guide. **(Not work very well)**
 - `autoflake` F9, automatically remove unused imports and variables in current python file.   
+
 To make them work, you should install the following packages:
 ```
 conda install -c conda-forge ctags

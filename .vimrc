@@ -68,6 +68,7 @@ call vundle#end()            " required
     " let g:tagbar_compact = 1
     " let g:tagbar_sort = 0
     nmap <F4> :TagbarToggle<CR>
+    nmap <leader>t :TagbarToggle<CR>
   "  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
     nmap <F6> :NERDTreeToggle<CR> :Tagbar<CR> 
   
