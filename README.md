@@ -49,7 +49,7 @@ Name                             | Function
 'tpope/vim-surround'             | Add, delete, change delimiters
 'tell-k/vim-autopep8'            | F8 Auto format python file
 'tell-k/vim-autoflake'           | F9 Remove unused imports and variable in python file 
-'scrooloose/nerdcommenter'       | Quick comment <leader>ci
+'scrooloose/nerdcommenter'       | Quick comment `<leader>+ci`
 'tpope/vim-fugitive'             | Git wrapper in vim
 'terryma/vim-smooth-scroll'      | Smooth scroll
 'junegunn/vim-easy-align'        | Align codes easily
