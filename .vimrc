@@ -150,7 +150,6 @@ call vundle#end()            " required
     nmap gd :Gdiff<CR>
 
   " NerdCommenter
-    map <F5> <leader>ci 
     let g:NERDSpaceDelims=1
   " Markdown 
     let g:vim_markdown_folding_disabled = 1
