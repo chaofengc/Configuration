@@ -81,9 +81,25 @@ pip install autopep8
 pip install autoflake
 ```
 
-#### Other Custom Settings
+#### Frequently Used Custom Shortcuts 
+**Note: map `<Space>` as `<leader>`**
+
 *Normal Mode*
-- map `<Space>` as `<leader>`
+
+Command                    | Function
+----                       | ---
+`<leader> q`               | the same as `:q`
+`<leader> w`               | the same as `:w`
+`<leader> m`               | Open Nerdtree
+`Ctrl + w + v`             | Split window vertically
+`<leader> ci`              | Quick comment
+`z=`                       | Spell correct (Need to `:set spell`)
+`gaip`                     | Align a paragraph by specific character
+`gw`                       | Quick Git add
+`gs`                       | Show Git status
+`cc`(In Git status window) | Edit Git commit message
+`gg`                       | Go to function, supported by YouCompleteMe, not always work
+
 - F3 or `<leader>+m`, NerdTree; F4 or `<leader>+t`, Tagbar; F6, NerdTree and Tagbar
 - F2, write and exit; `<leader>`+w, write; `<leader>+q`, exit
 
