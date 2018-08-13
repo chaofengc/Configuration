@@ -100,9 +100,6 @@ Command                    | Function
 `cc`(In Git status window) | Edit Git commit message
 `gg`                       | Go to function, supported by YouCompleteMe, not always work
 
-- F3 or `<leader>+m`, NerdTree; F4 or `<leader>+t`, Tagbar; F6, NerdTree and Tagbar
-- F2, write and exit; `<leader>`+w, write; `<leader>+q`, exit
-
 *Insert Mode*
 - Ctrl+l, ESC
 
