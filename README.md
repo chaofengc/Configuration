@@ -91,6 +91,7 @@ Command                    | Function
 `<leader> q`               | the same as `:q`
 `<leader> w`               | the same as `:w`
 `<leader> m`               | Open Nerdtree
+`<leader> s`               | Set/Unset spell check
 `Ctrl + w + v`             | Split window vertically
 `<leader> ci`              | Quick comment
 `z=`                       | Spell correct (Need to `:set spell`)
