@@ -99,7 +99,7 @@ Command                    | Function
 `gw`                       | Quick Git add
 `gs`                       | Show Git status
 `cc`(In Git status window) | Edit Git commit message
-`gg`                       | Go to function, supported by YouCompleteMe, not always work
+`<leader>gg`               | Go to function for python, supported by YouCompleteMe
 
 *Insert Mode*
 - Ctrl+l, ESC
