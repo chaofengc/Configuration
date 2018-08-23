@@ -12,8 +12,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'vim-scripts/wombat256.vim'
-Plugin 'dracula/vim'
 " AutoComplete and Program Tools
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -175,23 +173,23 @@ call vundle#end()            " required
     map <C-n> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
   "
   " Plugin YCM settings.
-    set completeopt=longest,menu
+    " set completeopt=menu,menuone
     let g:ycm_min_num_of_chars_for_completion=2
-    let g:ycm_cache_omnifunc=0
-    let g:ycm_seed_identifiers_with_syntax=1
     let g:ycm_complete_in_comments = 1
     let g:ycm_complete_in_strings = 1
-    let g:ycm_collect_identifiers_from_comments_and_strings = 0
+    " let g:ycm_cache_omnifunc=0
+    " let g:ycm_seed_identifiers_with_syntax=1
+    " let g:ycm_collect_identifiers_from_comments_and_strings = 0
     let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
-    let g:syntastic_check_on_open=1
-    let g:syntastic_enable_signs=1
-    let g:syntastic_cpp_check_header = 1
-    let g:syntastic_cpp_remove_include_errors = 1
+    " let g:syntastic_check_on_open=1
+    " let g:syntastic_enable_signs=1
+    " let g:syntastic_cpp_check_header = 1
+    " let g:syntastic_cpp_remove_include_errors = 1
     "Close window when complete"
     let g:ycm_autoclose_preview_window_after_completion=1
     " let g:ycm_server_python_interpreter= '/home/cfchen/anaconda2/bin/python' 
-    let g:ycm_error_symbol = '>>'
-    let g:ycm_warning_symbol = '>*'
+    " let g:ycm_error_symbol = '>>'
+    " let g:ycm_warning_symbol = '>*'
     "Close popup menue when leave insert mode"\
     autocmd InsertLeave * if pumvisible() == 0|pclose|endif
     " youcompleteme select keys
