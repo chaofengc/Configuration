@@ -226,6 +226,7 @@ call vundle#end()            " required
   set whichwrap+=<,>,h,l
   set scrolloff=10
   set mouse=a       
+  set spell
 " GUI status, tools, menu bar
   "" syntax
     syntax on
