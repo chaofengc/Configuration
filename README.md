@@ -10,12 +10,9 @@
 
 ## Install
 
-1. Clone this repository
+- Clone this repository and Run install script 
 ```
 git clone https://github.com/chaofengc/Configuration ~/
-```
-1. Run install script 
-```
 cd ~/Configuration
 bash install.sh
 ```
