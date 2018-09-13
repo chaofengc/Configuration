@@ -1,4 +1,5 @@
 # Vim and Tmux configuration
+ - [Install](#install)
  - [Vim Config](#vim-config)
    * [Update to Vim 8](#update-to-vim-8)
    * [Plugin Notes](#plugin-notes)
@@ -6,6 +7,18 @@
  - [How to cooperate vim and tmux](#how-to-cooperate-vim-and-tmux)
  - [SecureCRT configuration](#securecrt-configuration)
 ![Example Image](example.png)
+
+## Install
+
+1. Clone this repository
+```
+git clone https://github.com/chaofengc/Configuration ~/
+```
+1. Run install script 
+```
+cd ~/Configuration
+bash install.sh
+```
 
 ## Vim Config
 My vimrc and some candidates
