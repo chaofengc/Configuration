@@ -227,6 +227,7 @@ call vundle#end()            " required
   set scrolloff=10
   set mouse=a       
   set spell
+  set pastetoggle=<leader>p
 " GUI status, tools, menu bar
   "" syntax
     syntax on
