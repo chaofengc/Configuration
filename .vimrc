@@ -226,6 +226,7 @@ call plug#end()
   set scrolloff=10
   set mouse=a       
   set spell
+  set pastetoggle=<leader>pp
 " GUI status, tools, menu bar
   "" syntax
     syntax on
