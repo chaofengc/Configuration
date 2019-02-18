@@ -4,34 +4,33 @@
 "--------------------------------------------------------------------------------
 set nocompatible              " be iMproved, required
 filetype off                  " required
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
+
+"=====================================
+" Plugin Manager 
+"=====================================
+call plug#begin('~/.vim/plugged')
 " Color and Theme
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'altercation/vim-colors-solarized'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'altercation/vim-colors-solarized'
 " AutoComplete and Program Tools
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'majutsushi/tagbar'
-Plugin 'Yggdroot/indentLine'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'tell-k/vim-autoflake'
-" Plugin 'tell-k/vim-autopep8'
-Plugin 'Chiel92/vim-autoformat'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-surround'
-Plugin 'junegunn/vim-easy-align'
+Plug 'Valloric/YouCompleteMe', {'do': './install.py --clang-completer'}
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'majutsushi/tagbar'
+Plug 'Yggdroot/indentLine'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tell-k/vim-autoflake'
+Plug 'Chiel92/vim-autoformat'
+Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
+Plug 'junegunn/vim-easy-align'
 " Markdown Tools
-" Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'terryma/vim-smooth-scroll'
-call vundle#end()            " required
+Plug 'plasticboy/vim-markdown'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-unimpaired'
+Plug 'terryma/vim-smooth-scroll'
+call plug#end()
 
 "------------------------------------
 " Plugin Settings  

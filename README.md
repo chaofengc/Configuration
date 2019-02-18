@@ -44,7 +44,7 @@ sudo update-alternatives --set vim /usr/bin/vim.nox-py2
 sudo update-alternatives --set vi /usr/bin/vim.nox-py2
 ```
 ### Plugin Notes
-Plugin List
+Plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug), and here is the plugin list
 
 Name                             | Function
 ----                             | ---
@@ -66,18 +66,6 @@ Name                             | Function
 'tpope/vim-unimpaired'           | Easy :next and :previous
 'plasticboy/vim-markdown'        | Markdown
 
-Get `Vundle` first by
-```
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-```
-Then install these Plugins by `:PluginInstall` in Vim.
-
-#### YouCompleteMe
-Ultimate auto-complete plugin for Vim. After installation, you need to compile it
-```
-cd ~/.vim/bundle/YouCompleteMe
-./install.py --clang-completer
-```
 
 #### Extra Dependencies of Plugins 
 - `tagbar` F4, displays tags in a window
