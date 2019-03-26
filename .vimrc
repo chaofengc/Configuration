@@ -128,6 +128,7 @@ call plug#end()
   " indentLine
     let g:indentLine_char='┆'
     let g:indentLine_enabled = 1
+    let g:indentLine_setConceal=0
 
   " autopep8 \
     " autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
@@ -157,7 +158,6 @@ call plug#end()
     let g:tex_conceal = ""
     let g:vim_markdown_math = 1
     let g:vim_markdown_strikethrough = 1
-    au FileType markdown setl conceallevel=0
     
  " CtrlP 
     set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.png,*.jpg,*.jpeg,*.gif " MacOSX/Linux
@@ -277,7 +277,6 @@ call plug#end()
 	set splitbelow
 	set splitright
   " autocmd and file type
-  " autocmd BufNewFile,BufRead *.md set filetype=markdown "Markdown to HTML
   filetype on
   filetype plugin on
   filetype indent on
