@@ -26,6 +26,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-easy-align'
 " Markdown Tools
+Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
@@ -152,8 +153,11 @@ call plug#end()
     let g:vim_markdown_folding_disabled = 1
     let g:vim_markdown_no_default_key_mappings = 1
     let g:vim_markdown_toc_autofit = 1
-    let g:vim_markdown_math = 1
     let g:vim_markdown_conceal = 0
+    let g:tex_conceal = ""
+    let g:vim_markdown_math = 1
+    let g:vim_markdown_strikethrough = 1
+    au FileType markdown setl conceallevel=0
     
  " CtrlP 
     set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.png,*.jpg,*.jpeg,*.gif " MacOSX/Linux
