@@ -154,6 +154,7 @@ call plug#end()
     let g:vim_markdown_toc_autofit = 1
     let g:vim_markdown_math = 1
     let g:vim_markdown_conceal = 0
+    let g:vim_markdown_conceal_code_blocks = 0
     
  " CtrlP 
     set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.png,*.jpg,*.jpeg,*.gif " MacOSX/Linux
