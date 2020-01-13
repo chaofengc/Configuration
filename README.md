@@ -10,7 +10,7 @@
 
 ## Install
 
-- Clone this repository and Run install script 
+Please **install Anaconda and activate your Python environment first**, then clone this repository and Run install script 
 ```
 git clone https://github.com/chaofengc/Configuration ~/
 cd ~/Configuration
@@ -27,22 +27,15 @@ My vimrc and some candidates
 
 [**HERE**](http://learnvimscriptthehardway.stevelosh.com/chapters/01.html) is a perfect book for you to learn vim scripts.
 
-### Update to Vim 8
-Check Vim version by `:ve(rsion)` in Vim. Vim 8 supports some convenient plugin. Update to vim 8 with the following lines.
+### Update Vim and Tmux using Anaconda 
+As there are many new and convenient features in new version of tmux and vim, it is recommended to update vim and tmux. You are also suggested to do this through Anaconda, because sudo right is not needed and more importantly Anaconda only affects your own environment.
+You can update Vim and Tmux using the following commands **Within your anaconda environment**
 ```
-sudo add-apt-repository ppa:jonathonf/vim        # get the newest version of vim
-sudo apt-get update && sudo apt-get install vim  # update package
+conda install -c conda-forge tmux==2.7
+conda install -c conda-forge vim 
 ```
-To work with python 3
-```
-sudo apt-get install vim-nox                  # add python3 support
-```
-To work with python 2
-```
-sudo apt install vim-nox-py2
-sudo update-alternatives --set vim /usr/bin/vim.nox-py2
-sudo update-alternatives --set vi /usr/bin/vim.nox-py2
-```
+**Notice: remember that you can only use them where they are installed.**
+
 ### Plugin Notes
 Plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug), and here is the plugin list
 
